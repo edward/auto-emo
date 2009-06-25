@@ -1,0 +1,9 @@
+= auto-emo
+
+Sometimes, you just need a whole lot of generated emo poetry.
+
+Poems were filched from across the web. No more than a single line from each appears in any generated stanza. So, the marshalled poems are definitely not copyrighted by me, but everything else is.
+
+== Copyright
+
+Copyright (c) 2009 Edward Ocampo-Gooding. See LICENSE for details.
