@@ -22,28 +22,15 @@ end
 
 poems = []
 
-File.open("marshalled_poems") do |f|
+File.open("poems") do |f|
   poems = Marshal.load(f)
-end
-
-cleaned_poems = []
-
-poems.each do |line|
-  l = line.gsub(/<.*>/, ' ').gsub('&nbsp;', ' ').gsub("&quot;", '’')
-  l = l.gsub("í", "'").gsub("Ö", '').squeeze(" ").strip
-  next if l.size > 80
-  next if l.size < 3
-  next if l == "End of Poem"
-  next if l =~ /^Author:/
-  next if l =~ /^Title:/
-  cleaned_poems << l
 end
 
 puts "\nBooyeah! Let's make some poetry!"
 
 File.open("emo-poetry.txt", "w+") do |f|
   500.times do
-    f << poetry_churn(cleaned_poems)
+    f << poetry_churn(poems)
     f << "\n\n"
   end
 end
