@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "VERSION",
      "auto-emo.gemspec",
+     "bin/auto-emo",
      "lib/auto-emo.rb",
      "lib/poems",
      "test/auto-emo_test.rb",
