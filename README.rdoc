@@ -9,6 +9,32 @@ Poems were filched from across the web. No more than a single line from each app
   $ auto-emo [-n poems]
       -n, --number N                   Generate N poems (default is 3)
 
+== Example output
+
+  $ auto-emo 
+
+	And You Weren't Real...
+	the heavens
+	Scenic mountain range
+	paint me blood red.
+	Giving me useless advice, I will never need.
+	You are all of these,
+
+
+	When you've had more than what you deserve
+	Magma explosions,
+	I miss the funny feeling
+	A virgin with a reputation
+	I'm tired of hurting,
+	It's a feeling that only true Lady Sunsets can bring.
+
+
+	Watch it sting
+	We'll take it for the road.
+	My breath i did hold
+	Ive thought over
+	wondering eye.I know in my heart
+
 == Copyright
 
 The pilfered poems are definitely not copyrighted by me, but everything else is.
