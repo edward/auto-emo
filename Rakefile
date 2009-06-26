@@ -9,9 +9,11 @@ begin
     gem.email = "edward@edwardog.net"
     gem.homepage = "http://github.com/edward/auto-emo"
     gem.authors = ["Edward Ocampo-Gooding"]
+    gem.rubyforge_project = "auto-emo"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 
+  Jeweler::RubyforgeTasks.new
 rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
 end
