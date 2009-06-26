@@ -2,7 +2,12 @@
 
 Sometimes, you just need a whole lot of generated emo poetry.
 
-Poems were filched from across the web. No more than a single line from each appears in any generated stanza.
+Said generated poetry emerges from scraping a ton of some choice
+material and naively randomly sampling lines, and banging it
+together.
+
+No more than a single line from any original poem appears in any
+generated stanza.
 
 == Usage
 
