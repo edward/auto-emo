@@ -1,0 +1,39 @@
+#!/usr/bin/env ruby -wKU
+
+require File.join(File.dirname(__FILE__), *%w[.. lib auto-emo])
+require "optparse"
+
+AUTO_EMO_VERSION = File.read(File.join(File.dirname(__FILE__), *%w[.. VERSION]))
+
+options = {:number => 3}
+
+ARGV.options do |opts|
+  opts.banner = "Usage:  #{File.basename($PROGRAM_NAME)} [-n poems]"
+    
+  opts.on("-n", "--number N", Integer, "Generate N poems") do |n|
+    options[:number] = n
+  end
+  
+  opts.on_tail("-h", "--help", "Show this message") do
+    puts opts
+    exit
+  end
+
+  opts.on_tail("--version", "Show version") do
+    puts AUTO_EMO_VERSION
+    exit
+  end
+  
+  begin
+    opts.parse!
+    
+    options[:number].times do |n|
+      puts EmoPoem.generate
+      puts "\n\n" if n < (options[:number] - 1)
+    end
+
+  rescue
+    puts opts
+    exit
+  end
+end

@@ -4,35 +4,19 @@
 
 require "rubygems"
 
-# It would be really cool to have UTF8 working
-# require 'jcode'
-# $KCODE = 'UTF8'
-
-# Returns a poem
-def poetry_churn(poems)
-  length = 4 + rand(7)
-  lines = []
-
-  length.times do
-    lines << poems[rand(poems.size)]
+class EmoPoem
+  File.open(File.join(File.dirname(__FILE__), 'poems')) do |f|
+    @@poems = Marshal.load(f)
   end
   
-  lines.join("\n")
-end
+  def self.generate
+    length = 4 + rand(7)
+    lines = []
 
-poems = []
+    length.times do
+      lines << @@poems[rand(@@poems.size)]
+    end
 
-File.open("poems") do |f|
-  poems = Marshal.load(f)
-end
-
-puts "\nBooyeah! Let's make some poetry!"
-
-File.open("emo-poetry.txt", "w+") do |f|
-  500.times do
-    f << poetry_churn(poems)
-    f << "\n\n"
+    lines.join("\n")
   end
 end
-
-`open emo-poetry.txt`
