@@ -1,7 +1,7 @@
 require 'test_helper'
 
-class AutoEmoTest < Test::Unit::TestCase
-  should "probably rename this file and start testing for real" do
-    flunk "hey buddy, you should probably rename this file and start testing for real"
+class AutoEmoPoemTest < Test::Unit::TestCase
+  def test_generation
+    assert !AutoEmo::Poem.generate.empty?
   end
 end
