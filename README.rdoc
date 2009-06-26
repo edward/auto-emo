@@ -6,8 +6,8 @@ Poems were filched from across the web. No more than a single line from each app
 
 == Usage
 
-$ auto-emo [-n poems]
-    -n, --number N                   Generate N poems (default is 3)
+  $ auto-emo [-n poems]
+      -n, --number N                   Generate N poems (default is 3)
 
 == Copyright
 
