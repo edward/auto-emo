@@ -4,6 +4,11 @@ Sometimes, you just need a whole lot of generated emo poetry.
 
 Poems were filched from across the web. No more than a single line from each appears in any generated stanza.
 
+== Usage
+
+$ auto-emo [-n poems]
+    -n, --number N                   Generate N poems (default is 3)
+
 == Copyright
 
 The pilfered poems are definitely not copyrighted by me, but everything else is.
