@@ -10,7 +10,7 @@ options = {:number => 3}
 ARGV.options do |opts|
   opts.banner = "Usage:  #{File.basename($PROGRAM_NAME)} [-n poems]"
     
-  opts.on("-n", "--number N", Integer, "Generate N poems") do |n|
+  opts.on("-n", "--number N", Integer, "Generate N poems (default is #{options[:number]})") do |n|
     options[:number] = n
   end
   
