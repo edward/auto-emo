@@ -28,7 +28,7 @@ ARGV.options do |opts|
     opts.parse!
     
     options[:number].times do |n|
-      puts EmoPoem.generate
+      puts AutoEmo::Poem.generate
       puts "\n\n" if n < (options[:number] - 1)
     end
 
